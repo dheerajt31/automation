@@ -29,7 +29,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
 		FileInputStream file = new FileInputStream(
-				"C:\\Users\\dheeraj\\eclipse-workspaces\\Datahide\\src\\test\\resources\\config.properties");
+				"C:\\Users\\dheeraj\\eclipse-workspaces\\Datagrid\\src\\test\\resources\\config.properties");
 		 p = new Properties();
 		
 		p.load(file);
@@ -49,7 +49,7 @@ public class BaseClass {
 
 			TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 			File SourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-			String targetfilepath = "C:\\Users\\dheeraj\\eclipse-workspaces\\Datahide\\screenshots\\" + tname + " "
+			String targetfilepath = "C:\\Users\\dheeraj\\eclipse-workspaces\\Datagrid\\screenshots\\" + tname + " "
 					+ timeStamp + ".png";// = System.getProperty("user.dir")+"\\screenshots\\"
 			File targetfile = new File(targetfilepath);
 
@@ -57,6 +57,7 @@ public class BaseClass {
 			return targetfilepath;
 
 		}
+		
 
 	}
 
